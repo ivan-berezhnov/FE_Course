@@ -1,0 +1,79 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font: 12px "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+    color: #484848;
+    background-color: #f9f9f9;
+}
+
+.contener {
+    padding: 30px 30px 5px 30px;
+    margin: 7px auto;
+    width: 490px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    background: #fff url("../img/sprite.png") repeat-x 0px -38px;
+}
+
+header {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+header > h1 {
+    color: #21759b;
+    margin: 0px;
+    font-weight: 400;
+}
+
+header > #slogan {
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+main > article > p {
+    line-height: 1.6;
+}
+
+footer {
+    border-top: 1px solid #d9d9d9;
+    position: relative;
+}
+
+footer > ul {
+    color: #787878;
+    font-size: 11px;
+    line-height: 1.7;
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer > ul > li:nth-child(1) > div {
+    border: 0px none #fff;
+    float: left;
+    margin-right: 4px;
+    background: #fff url("../img/sprite.png") no-repeat -41px 2px;
+    width: 13px;
+    height: 16px;
+}
+
+footer > ul > li:nth-child(2) > div {
+    border: 0px none #fff;
+    float: left;
+    margin-right: 4px;
+    background: #fff url("../img/sprite.png") no-repeat -60px 2px;
+    width: 13px;
+    height: 16px;
+}
+
+footer > a {
+    background: #fff url("../img/sprite.png") no-repeat 0px 0px;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
