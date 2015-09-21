@@ -1,0 +1,11 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css";
+
+body {
+    background: #d9d9d9;
+}
+.container {
+    background: #fff;
+}
+.border-block {
+    border: dotted 1px #484848;
+}
