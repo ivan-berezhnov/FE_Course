@@ -1,5 +1,5 @@
 Lesson #0 - done.
 Lesson #1 - done.
-Lesson #2 - In Progress (нужно добавть поля, сделать вадидацию). It will be done in 22-09-2015
-Lesson #3 - In Progress (добавить недостающие блоки, контент, сделать responsive). It will be done in 22-09-2015
+Lesson #2 - In Progress (РЅСѓР¶РЅРѕ РґРѕР±Р°РІС‚СЊ РїРѕР»СЏ, СЃРґРµР»Р°С‚СЊ РІР°РґРёРґР°С†РёСЋ). It will be done in 22-09-2015
+Lesson #3 - In Progress (РґРѕР±Р°РІРёС‚СЊ РЅРµРґРѕСЃС‚Р°СЋС‰РёРµ Р±Р»РѕРєРё, РєРѕРЅС‚РµРЅС‚, СЃРґРµР»Р°С‚СЊ responsive). It will be done in 22-09-2015
 Lesson #4 - Wait. It will be done in 22-09-2015
