@@ -3,115 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <title>Lesson#3</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
-<div class="contener">
+<div class="container">
     <div class="row">
-        <div class="col-lg-offset-3 col-lg-4">
+        <div class="col-lg-12 text-center">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <div class="modal-header">
-                            <h3 class="modal-title text-center">Registration form:</h3>
-                        </div>
-
                         <!-- Start form-->
-                        <form class="form-horizontal center-block">
-                            <p></p>
+                        <form role="form">
+                            <fieldset class="scheduler-border text-left">
+                                <legend class="scheduler-border">Registration form:</legend>
 
-                            <div class="form-group">
-                                <label for="name" class="col-sm-4 control-label">Your name:</label>
-
-                                <div class="col-sm-7 input-group input-group-sm">
-                                    <input type="text" class="form-control" id="name" name="name"
-                                           placeholder="Josh Milton" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="login" class="col-sm-4 control-label">Login:</label>
-
-                                <div class="col-sm-7 input-group input-group-sm">
-                                    <input type="text" class="form-control" id="login" name="login"
-                                           placeholder="" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="InputPassword" class="col-sm-4 control-label">Password:</label>
-
-                                <div class="col-sm-7 input-group input-group-sm">
-                                    <div class="row">
-                                        <div class="col-sm-6 input-group-sm">
-                                            <input type="password" class="form-control" id="InputPassword"
-                                                   name="InputPassword" placeholder="введите" required>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="name" class="hidden">Name</label>
+                                            <input type="text" name="name" id="name" class="form-control input-md" placeholder="First and Last name *" tabindex="1" required>
                                         </div>
-                                        <div class="col-sm-6 input-group-sm">
-                                            <input type="password" class="form-control" id="InputPassword2"
-                                                   name="InputPassword" placeholder="повторите" required>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="login" class="hidden">Login</label>
+                                            <input type="text" name="login" id="login" class="form-control input-md" placeholder="Login *" tabindex="2" required>
                                         </div>
+                                    </div>
+                                </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="password" class="hidden">Password</label>
+                                        <input type="password" name="password" id="password" class="form-control input-md" placeholder="Password *" pattern=".{6,}" title="Six or more characters" tabindex="3" required>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="password_confirmation" class="hidden">Confirm Password</label>
+                                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-md" placeholder="Confirm Password *" pattern=".{6,}" title="Six or more characters" tabindex="4" required>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="email" class="col-sm-4 control-label">Email:</label>
+                                <label for="email" class="hidden">Email Address</label>
+                                <input type="email" name="email" id="email" class="form-control input-md" placeholder="Email Address *" tabindex="5" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                            </div>
+                            </fieldset>
 
-                                <div class="col-sm-7 input-group input-group-sm">
-                                    <input type="text" class="form-control" id="email" name="email"
-                                           placeholder="example@mail.com" required>
-                                </div>
+
+                            <div class="form-group text-left">
+                                <label for="birthday" class="col-sm-12 control-label">Birthday:</label>
+                                <input type="date" name="birthday" id="birthday" class="form-control input-md" tabindex="6">
                             </div>
 
-                            <div class="form-group">
-                                <label for="brinthday" class="col-sm-4 control-label">Дата рождения:</label>
-
-                                <div class="col-sm-7 input-group input-group-sm">
-                                    <input type="text" class="form-control" id="brinthday" name="brinthday"
-                                           placeholder="login">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="InputPassword" class="col-sm-4 control-label">Адресс:</label>
-
-                                <div class="col-sm-7 input-group input-group-sm">
-                                    <div class="row">
-                                        <div class="col-sm-6 input-group-sm">
-                                            <input type="password" class="form-control" id="InputPassword"
-                                                   name="InputPassword" placeholder="Город" required>
+                            <fieldset class="scheduler-border text-left">
+                                <legend class="scheduler-border">Address:</legend>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="city" class="hidden">City</label>
+                                            <input type="text" name="city" id="city" class="form-control input-md" placeholder="City *" tabindex="7" required>
                                         </div>
-                                        <div class="col-sm-6 input-group-sm">
-                                            <input type="password" class="form-control" id="InputPassword2"
-                                                   name="InputPassword" placeholder="Индекс">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="post_code" class="hidden">Post code</label>
+                                            <input type="text" name="post_code" id="post_code" class="form-control input-md" placeholder="Post code" pattern="[A-Za-z]{3}" tabindex="8">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-9 text-right">
-                                    <button type="reset" class="btn btn-default">Reset</button>
-                                    <button type="submit" class="btn btn-primary">Save</button>
+                                <div class="form-group">
+                                    <label for="region" class="hidden">Region</label>
+                                    <select class="form-control" name="region" id="region" tabindex="9">
+                                        <option value="">- Select your region -</option>
+                                        <option value="1">Винницкая область</option>
+                                        <option value="2">Волынская область</option>
+                                        <option value="3">Днепропетровская область</option>
+                                        <option value="4">Донецкая область</option>
+                                        <option value="5">Житомирская область</option>
+                                        <option value="6">Закарпатская область</option>
+                                        <option value="7">Запорожская область</option>
+                                        <option value="8">Ивано- Франковская область</option>
+                                        <option value="9">Киевская область</option>
+                                        <option value="10">Кировоградская область</option>
+                                        <option value="11">Крым</option>
+                                        <option value="12">Луганская область</option>
+                                        <option value="13">Львовская область</option>
+                                        <option value="14">Николаевская область</option>
+                                        <option value="15">Одесская область</option>
+                                        <option value="16">Полтавская область</option>
+                                        <option value="17">Ровенская область</option>
+                                        <option value="18">Сумская область</option>
+                                        <option value="19">Тернопольская область</option>
+                                        <option value="20">Харьковская область</option>
+                                        <option value="21">Херсонская область</option>
+                                        <option value="22">Хмельницкая область</option>
+                                        <option value="23">Черкасская область</option>
+                                        <option value="24">Черниговская область</option>
+                                        <option value="25">Черновицкая область</option>
+                                    </select>
                                 </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="street" class="hidden">Street</label>
+                                            <input type="text" name="street" id="street" class="form-control input-md" placeholder="Street" tabindex="10">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <label for="house_number" class="hidden">House number</label>
+                                            <input type="text" name="house_number" id="house_number" class="form-control input-md" placeholder="House number" tabindex="11">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-2 col-md-2">
+                                        <div class="form-group">
+                                            <label for="ap" class="hidden">Apart</label>
+                                            <input type="text" name="ap" id="ap" class="form-control input-md" placeholder="Apart" tabindex="12">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+
+                            <div class="form-group text-left">
+                                <label for="hobby" class="col-sm-12 control-label">Your hobby:</label>
+                                    <div class="checkbox" id="hobby">
+                                        <label class="checkbox-inline"><input type="checkbox" name="hobby" value="Fitness" tabindex="13">Fitness</label>
+                                        <label class="checkbox-inline"><input type="checkbox" name="hobby" value="Football" tabindex="14">Football</label>
+                                        <label class="checkbox-inline"><input type="checkbox" name="hobby" value="Running" tabindex="15">Running</label>
+                                        <label class="checkbox-inline"><input type="checkbox" name="hobby" value="Music" tabindex="16">Music</label>
+                                        <label class="checkbox-inline"><input type="checkbox" name="hobby" value="BikeCycling" tabindex="17">BikeCycling</label>
+                                    </div>
+                                </div>
+
+                            <div class="form-group text-left">
+                                <label for="how_to_find_us" class="col-sm-12 control-label">How to find us:</label>
+                                <input list="find_us" id="how_to_find_us" name="how_to_find_us" class="form-control input-md">
+                                <datalist id="find_us" tabindex="18">
+                                    <option>Google</option>
+                                    <option>Yandex</option>
+                                    <option>Yahho</option>
+                                </datalist>
                             </div>
 
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6"><input type="reset" value="Reset" class="btn btn-block btn-lg" tabindex="99"></div>
+                                <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="98"></div>
+                            </div>
                         </form>
                         <!-- End form-->
-
                     </div>
                 </div>
                 <!-- /.modal-content -->
             </div>
             <!-- /.modal-dialog -->
-
-
-            <div class="col-lg-4"></div>
         </div>
     </div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
