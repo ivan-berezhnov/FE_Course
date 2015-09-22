@@ -2,12 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Lesson #5</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     
     <script type="text/javascript">
         $(document).ready(function(){
-          // your code shold be placed here  
+            // #1 Copy text from hidden to loading.
+            $('.loading').text('').css({'color' : '#000'});
+            $('.hidden > h2, .hidden > p').clone().appendTo('.loading');
+
+            // #2 LI from main menu reverse.
+            var list = $('header > nav > ul');
+            var listItems = list.children('li');
+            list.append(listItems.get().reverse());
+            listItems.css({'padding' : '0 5px'});
+
+            // #3 In each span element add reverse index.
+            var count = $("footer ul").children().length;
+            $('footer li > a > span').each(function( index ){
+                var num = count - index;
+                $(this).text('#' + num + ' ');
+            });
         })
     </script>
 
@@ -63,11 +78,11 @@
             
             <nav>
                 <ul>
-                    <li><a href="">Lorem.</a></li>
-                    <li><a href="">Sit.</a></li>
-                    <li><a href="">Illo?</a></li>
-                    <li><a href="">Adipisci?</a></li>
-                    <li><a href="">Officiis.</a></li>
+                    <li><a href="">Lorem. </a></li>
+                    <li><a href="">Sit. </a></li>
+                    <li><a href="">Illo? </a></li>
+                    <li><a href="">Adipisci? </a></li>
+                    <li><a href="">Officiis. </a></li>
                 </ul>
             </nav>
             <a href="./" class="logo"><img src="logo.png" alt=""></a>
