@@ -6,6 +6,7 @@ body {
 .container {
     background: #fff;
 }
-.border-block {
-    border: dotted 1px #484848;
+header div {
+    background: #f5f5f5;
+
 }
