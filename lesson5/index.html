@@ -8,18 +8,22 @@
     <script type="text/javascript">
         $(document).ready(function(){
             // #1 Copy text from hidden to loading.
-            $('.loading').text('').css({'color' : '#000'});
-            $('.hidden > h2, .hidden > p').clone().appendTo('.loading');
+            //$('.loading').text('').css({'color' : '#000'});
+            //$('.hidden > h2, .hidden > p').clone().appendTo('.loading');
+            //it would be better
+            $('.container-main').html('.loading').html());
+            
 
             // #2 LI from main menu reverse.
-            var list = $('header > nav > ul');
-            var listItems = list.children('li');
-            list.append(listItems.get().reverse());
-            listItems.css({'padding' : '0 5px'});
-
+            var $list = $('header nav ul'),
+                $listItems = $list.children('li')
+                    .css({'padding' : '0 5px'});
+                
+            $list.append(listItems.get().reverse());
+            
             // #3 In each span element add reverse index.
             var count = $("footer ul").children().length;
-            $('footer li > a > span').each(function( index ){
+            $('footer li  a span').each(function( index ){
                 var num = count - index;
                 $(this).text('#' + num + ' ');
             });
